@@ -8,12 +8,17 @@
     //Se a média for superior a 7, o programa deverá informar "+- 8 alunos reprovados".
     //Apresente a mensagem final, de acordo com o cenário descrito acima.
 
-    //ENTRADA
+    const turmaUm = Number(prompt(`Diga a nota da turma1`));
+    const turmaDois = Number(prompt(`Diga a nota da turma2`));
+    const turmaTres = Number(prompt(`Diga a nota da turma3`));
+    const turmaQuatro = Number(prompt(`Diga a nota da turma4`));
+    const turmaCinco = Number(prompt(`Diga a nota da turma5`));
+
+    let media = (turmaUm + turmaDois + turmaTres + turmaQuatro + turmaCinco) / 5 ;
 
 
-    //PROCESSAMENTO
-
-
-    //SAÍDA
+    (media <= 4) ? alert(`+- 50 alunos reprovados`)
+    : (media <= 7) ? alert(`+- 20 alunos reprovados`)
+    : alert(`+- 8 alunos reprovados`);
 
 </script>

@@ -10,12 +10,17 @@
     
     //Calcule os pontos e apresente o nível de dificuldade da escrita do texto.
 
-    //ENTRADA
+    const paginas = Number(prompt(`Quantas páginas o documento possui?`)) ;
+    const capitulos = Number(prompt(`Quantos capítulos o texto possui?`)) ;
+    const subCapitulos = Number(prompt(`Quantos subcapítulos o texto possui?`)) ;
 
+    let pag = paginas * 3 ;
+    let cap = capitulos * 5 ;
+    let subCap = subCapitulos * 8 ;
 
-    //PROCESSAMENTO
+    let FabioLindo = pag + cap + subCap ;
 
-
-    //SAÍDA
+    (FabioLindo <= 40) ? alert(`Mediano`)
+    : alert(`Complexo`) ;
 
 </script>
